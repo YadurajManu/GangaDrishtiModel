@@ -1,0 +1,26 @@
+# Microplastic Detection Dataset Configuration
+# Dataset for detecting microplastic particles using YOLO 11
+
+# Dataset paths (relative to this config file)
+path: /Users/sujeetkumarsingh/Desktop/ArcDownloads/GangaData  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: valid/images    # val images (relative to 'path')
+test: test/images    # test images (optional, relative to 'path')
+
+# Classes
+nc: 2  # number of classes
+names: ['microplastic_type_0', 'microplastic_type_1']  # class names
+
+# Additional settings for polygon detection
+# YOLO 11 supports polygon annotations automatically
+# Make sure your label files are in YOLO polygon format:
+# class_id x1 y1 x2 y2 x3 y3 ... (normalized coordinates 0-1)
+
+# Dataset statistics:
+# Total images: 51
+# Training: 36 images
+# Validation: 10 images  
+# Test: 5 images
+# Classes: 2 types of microplastics
+# Class 0: 3 instances
+# Class 1: 22 instances
